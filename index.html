@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,57 +12,45 @@ img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 </style>
 <body>
- 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-xxlarge" style="display:none;padding-top:150px;center:0;z-index:2">
-  <div class="w3-bar-block w3-center">
-    <a href="#หน้าแรก" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">หน้าแรก</a>
-    <a href="#ภาพ" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">ภาพ</a>
-    <a href="#ประวัติความเป็นมา" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">ประวัติความเป็นมา</a>
-    <a href="#บรรยากาศ" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">บรรยากาศ</a>
-  </div>
-</nav>
 
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;center:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="หน้าแรก">
-    <h1 class="w3-jumbo"><b>ตลาดน้ำคลองแห</b></h1>
-    <p>ยินดีต้อนรับ</p>
-    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">  
-  </header>
-    
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">หน้าแรก</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">ภาพ</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">ประวัติความเป็นมา</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">บรรยากาศ</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
   </div>
 </nav>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
+<div class="w3-content" style="max-width:1000px">
 
- <!-- Header with Slideshow -->
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>ตลาดน้ำแห</b></h1>
+  <p><b>ยินดีต้อนรับ</b></p>
+ </div>
+  
+<!-- Header with Slideshow -->
 <header class="w3-display-container w3-center">
- <div class="mySlides w3-animate-opacity">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
     <img class="w3-image" src="ff8.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
-    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">  
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      
     </div>
   </div>
   <div class="mySlides w3-animate-opacity">
     <img class="w3-image" src="ff7.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
     <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+    
     </div>
   </div>
   <div class="mySlides w3-animate-opacity">
@@ -71,106 +59,33 @@ img {margin-bottom: -7px}
        </div>
   </div>
 <header>
- 
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="ff8.jpg" style="width:100%">
-        <img src="ff3.jpg" style="width:100%">
-        <img src="ff2.jpg" style="width:100%">
-      </div>
 
-      <div class="w3-half">
-        <img src="ff1.jpg" style="width:100%">
-        <img src="ff4.jpg" style="width:100%">
-        <img src="ff5.jpg" style="width:100%">
-        <img src="ff6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="ประวัติความเป็นมา">
-    <h2>ประวัติความเป็นมา</h2>
-    <hr class="w3-opacity">
-    <p>"ตลาดน้ำคลองแห"  เป็นแนวคิดของนายอภิชาติ  สังขาชาติ ที่ได้ล่องเรือชมทัศนียภาพของสองฝั่งคลอง  
-        ในสมัยที่ยังไม่ได้รับตำแหน่งนายกเทศมนตรีเมืองคลองแห พบเห็นวิถีชีวิตของชาวบ้านแบบดั้งเดิม 
-        เช่น  การยกหาม  ชาวบ้านพายเรือเก็บผักบุ้ง  ตัดผักกระเฉด ซึ่งเป็นเรื่องที่ยังคงมีอยู่ในลำคลองแหในปัจจุบัน 
-    </p>
-    </div><br>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24">บรรยากาศ</h3>
-    <img src="/w3images/avatar_smoke.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Chandler Bing.</span> Web Designer.</p>
-    <p>Jane Doe is just awesome. I am so happy to have met her!</p><br>
-   
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p><br>
-    
-   
-  <!-- End About Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>ติดต่อสอบถาม</h2>
-    <hr class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>hatyai,TH</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone:075-336981</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: kongma@mail.com</p>
-    </div>
-    
-     <!-- Google Map -->
-    <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:300px;margin:36px 0;"></div>
-   
-    <p>ความคิดเห็น</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
   
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
-</div>
+ <script>
+   // Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
 
-<!-- Add Google Maps -->
-<script>
-    // Slideshow
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+  // Slideshow
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -188,38 +103,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
-
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Open and close sidebar
-function openNav() {
-    document.getElementById("mySidebar").style.width = "60%";
-    document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("mySidebar").style.display = "none";
-}
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>
