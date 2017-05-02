@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Contact us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-red">
+ 
+ <!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">MENU</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="detail.html" class="w3-bar-item w3-button">รายละเอียด</a>
+        <a href="atmosphere.html" class="w3-bar-item w3-button">บรรยากาศ</a>
+        <a href="starter" class="w3-bar-item w3-button">เวลาทำการ</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button">Image Gallery</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="Image.html" class="w3-bar-item w3-button">ร้านค้า</a>
+        <a href="#" class="w3-bar-item w3-button">รีวิวร้าน</a>
+       <a href="#" class="w3-bar-item w3-button">บรรยากาศ</a>
+      </div>
+    </div>
+    <a href="Contactus.html" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+ <!-- Photo grid -->
+  <div class="w3-container">
+     <div class="w3-row ">
+      <div class="w3-quarter">
+        <img src="b4.jpg" style="width:100%" onclick="onClick(this)" alt="การยิ้มเป็นส่วนหนึ่งที่ให้กับลูกค้าทุกคนประทับใจ">
+        <img src="b5.jpg" style="width:100%" onclick="onClick(this)" alt="ของฝากจากตลาดน้ำคลองแห">
+        <img src="b6.jpg" style="width:100%" onclick="onClick(this)" alt="ลูกชิ้น ไก่ย่าง พร้อมความอร่อยต้องลอง">
+          <img src="b7.jpg" style="width:100%" onclick="onClick(this)" "แม่ค้ามีไมตรีกันและกัน">
+       <img src="b20.jpg" style="width:100%" onclick="onClick(this)" "แม่ค้ามีไมตรีกันและกัน">
+     </div>
+
+     <div class="w3-quarter">
+        <img src="b8.jpg" style="width:100%" onclick="onClick(this)" alt="เกาลัดร้อนๆไหมจากเตาเลย">
+        <img src="b9.jpg" style="width:100%" onclick="onClick(this)" alt="ขนมจีบ ซาลาเปาจากแม่ค้ามุสลิม">
+        <img src="b10.jpg" style="width:100%" onclick="onClick(this)" alt="นาฬิกาทำมือราคา 200 บาท">
+        <img src="b7.jpg" style="width:100%" onclick="onClick(this)" "แม่ค้ามีไมตรีกันและกัน">
+      <img src="b21.jpg" style="width:100%" onclick="onClick(this)" alt="อาหารอร่อย ยำ ขนมจีน">
+      
+      </div>
+
+      <div class="w3-quarter">
+        <img src="b12.jpg" style="width:100%" onclick="onClick(this)" alt="การละเล่นในแบบไทย">
+        <img src="b13.jpg" style="width:100%" onclick="onClick(this)" alt="จักรยานจากไม้ไผ่">
+        <img src="b14.jpg" style="width:100%" onclick="onClick(this)" alt="น้ำผลไม้ใส่ในเครื่องปั้นดินเผา">
+        <img src="b15.jpg" style="width:100%" onclick="onClick(this)" alt="โรตีกรอบร้อนๆ">
+       <img src="b22.jpg" style="width:100%" onclick="onClick(this)" "แม่ค้ามีไมตรีกันและกัน">
+      </div>
+
+      <div class="w3-quarter">
+        <img src="b16.jpg" style="width:100%" onclick="onClick(this)" alt="เสื้อทำมือสวยงาม">
+        <img src="b17.jpg" style="width:100%" onclick="onClick(this)" alt="นาฬิกาทำมาจากไม้">
+        <img src="b18.jpg" style="width:100%" onclick="onClick(this)" alt="น้ำชาชักอร่อย">
+          <img src="b19.jpg" style="width:100%" onclick="onClick(this)" alt="ห่อหมกปลาร้อนๆจากเตา">
+       <img src="b23.jpg" style="width:100%" onclick="onClick(this)" "แม่ค้ามีไมตรีกันและกัน">
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+</body>
+</html>
